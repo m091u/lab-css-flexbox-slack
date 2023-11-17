@@ -1,0 +1,434 @@
+/*
+background purple: #540B51
+background ivory: #F3EAE2
+button blue: #4285F4
+titles black: #191817
+paragraph black: #000000
+paragraph yellow: #ECB12F
+links blue: #2E71A6
+footer links grey: #454245
+*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  --BG-COLOR: #540b51;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+}
+
+/* NAV */
+.nav {
+  background-color: var(--BG-COLOR);
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 30px 20px;
+}
+
+.nav-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav img {
+  height: 2rem;
+  background-color: var(--BG-COLOR);
+  padding: 0 0.5rem;
+}
+
+.nav button {
+  border: none;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--BG-COLOR);
+  color: aliceblue;
+  padding: 30px 5px;
+  text-align: center;
+}
+
+.header h1 {
+  padding-bottom: 1.2rem;
+}
+.yellow {
+  color: #ecb12f;
+}
+
+.header-button {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 1rem auto;
+  text-align: center;
+  gap: 1rem;
+}
+
+.header-button button {
+  padding: 15px 0;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 7px;
+  border: none;
+}
+.header-button button:first-child {
+  color: #540b51;
+  background-color: white;
+}
+.header-button button:last-child {
+  color: white;
+  background-color: #4285f4;
+}
+
+button.google {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+button.google img {
+  background-color: aliceblue;
+  margin-right: 10px;
+}
+
+.hero {
+  padding-top: 30px;
+  overflow: hidden;
+}
+
+/* MAIN */
+.companies {
+  padding: 40px 5px;
+  background-color: #f3eae2;
+}
+.companies-p {
+  padding-bottom: 2em;
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.companies-logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  gap: 40px 5px;
+}
+
+.companies-logos img {
+  height: 40px;
+}
+
+.teams {
+  text-align: center;
+  margin: 60px 5px;
+}
+
+.teams-h3 {
+  margin: auto;
+  padding: 10px 0;
+  font-size: 2em;
+  color: #540b51;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.teams-p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  width: 95%;
+  margin: auto;
+}
+
+.percentage {
+  color: #540b51;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.details {
+  /* width: 50%; */
+  line-height: 1rem;
+  font-weight: bold;
+  margin: auto;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0.25em;
+  background-color: var(--BG-COLOR);
+  color: aliceblue;
+  font-size: 2em;
+  text-align: center;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+
+.welcome button {
+  width: 90%;
+  padding: 15px 0;
+  font-size: clamp(0.8rem, 2vh, 1.3rem);
+  text-transform: uppercase;
+  border-radius: 7px;
+}
+
+.welcome button:nth-child(2) {
+  color: #540b51;
+}
+.welcome button:last-child {
+  color: aliceblue;
+  background-color: var(--BG-COLOR);
+  border: 1px solid aliceblue;
+}
+
+/* FOOTER */
+.footer {
+  padding: 1rem 0.5rem;
+  border-top: 2px solid #e7e4e7;
+  margin: 1rem;
+}
+
+.footer__ul li {
+  color: #454245;
+  font-weight: bold;
+  padding: 0.7em 0;
+}
+
+.footer__ul li:last-child {
+  color: rgb(45, 45, 160);
+}
+
+.footer__logos {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.7em 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.footer-copy {
+  color: #868386;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+small {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .nav ul {
+    display: none;
+  }
+
+  .details {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  .nav-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .nav img {
+    height: 2rem;
+    background-color: var(--BG-COLOR);
+    padding: 0 0.5rem;
+  }
+
+  .nav button {
+    border: none;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .hero img {
+    width: 300px;
+    height: auto;
+    left: 80%;
+    overflow: hidden;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .left {
+    width: 60%;
+  }
+  .left h1 {
+    font-size: 2.5rem;
+    padding: 2rem 0.5rem 3rem 0.5rem;
+    line-height: 1.5em;
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    text-align: left;
+    gap: 3rem;
+    padding: 1rem 2rem;
+  }
+
+  .footer__logos {
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  .footer-copy {
+    text-align: left;
+  }
+
+  .footer__ul {
+    display: flex;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .hero img {
+    width: 500px;
+    height: auto;
+    left: 90%;
+    overflow: hidden;
+  }
+
+  .left {
+    width: 50%;
+  }
+
+  .left h1 {
+    font-size: 5rem;
+    padding: 2rem 1rem 3rem 3rem;
+    line-height: 1.2em;
+    text-align: left;
+  }
+  .left p {
+    font-size: 1.8rem;
+  }
+
+  .footer__logos {
+    justify-content: flex-start;
+    gap: 7rem;
+    font-size: 2rem;
+  }
+
+  .footer-copy {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+
+  .footer__ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .nav {
+    display: flex;
+  }
+  .nav ul,
+  .nav-icon ul {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .nav-icon img {
+    height: 100%;
+  }
+
+  .nav-icon li {
+    width: max-content;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+  .menu {
+    display: none;
+  }
+  .nav-ul {
+    display: flex;
+    gap: 2em;
+  }
+
+  .welcome button {
+    width: 50%;
+  }
+  .welcome h3 {
+    font-size: 4rem;
+    padding: 2rem 0;
+  }
+  .teams-h3 {
+    font-size: 3rem;
+  }
+
+  .percentage {
+    font-size: 4rem;
+  }
+  .stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    text-align: left;
+    gap: 10rem;
+    padding: 2rem 4rem;
+  }
+}
